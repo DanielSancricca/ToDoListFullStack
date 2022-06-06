@@ -1,0 +1,8 @@
+<div *ngIf="results.length ===0">
+    <p>Search To Do List By Task Name</p>
+    <input type="text" [(ngModel)]="searchTerm"/>
+    <button (click)="searchToDoList()">Search</button>
+</div>
+<div *ngFor="let result of results">
+    <p>{{result.TaskName}}</p>
+</div>
